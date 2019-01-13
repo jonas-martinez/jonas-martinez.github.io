@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I am a 3rd year computer science student in France.
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Actually I prefer to try things with different technologies to have a very large knowledge in computer science.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[jonas.martinez721@gmail.com](mailto:jonas.martinez721@gmail.com)
