@@ -1,5 +1,5 @@
 body * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
 }
 
 p {
@@ -9,6 +9,8 @@ p {
 
 button {
     border: none;
+
+    cursor: pointer;
 }
 
 .button-primary {
@@ -18,6 +20,16 @@ button {
 
     padding: 8px;
     width: fit-content;
+
+    font-weight: bold;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.shadow {
+    filter: drop-shadow(2px 4px 4px #00000066)
 }
 
 body {
@@ -30,7 +42,12 @@ body {
 
 body > nav {
     display: flex;
+    width: 100%;
     justify-content: space-between;
+
+    &>img {
+        width: 40px;
+    }
 }
 
 body > section:first-of-type {
@@ -55,6 +72,8 @@ body > section:first-of-type {
     &>img {
         width: 120px;
         border-radius: 60px;
+
+        margin-top: 16px;
     }
 }
 
