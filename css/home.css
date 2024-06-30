@@ -40,6 +40,26 @@ body {
     padding: 24px 32px;
 }
 
+body > nav > div > aside {
+    position: absolute;
+    top: 0;
+    left: -100px;
+
+    height: 100%;
+
+    padding: 16px;
+
+    background-color: white;
+
+    border-right: 1px solid lightgray;
+
+    transition: left 0.3s ease-in-out;
+}
+
+body > nav > div > #openMenu:checked ~ aside {
+    left: 0px;
+}
+
 body > nav {
     display: flex;
     width: 100%;
