@@ -2,6 +2,10 @@ body * {
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    background-color: var(--background-color);
+}
+
 p {
     margin: 0;
     padding: 0;
@@ -29,7 +33,7 @@ button {
 }
 
 .button-primary {
-    background-color: #54B9AF;
+    background-color: var(--button-background);
     border-radius: 8px;
     color: white;
 
@@ -55,7 +59,7 @@ body {
     padding: 24px 32px;
 }
 
-body > nav > div > aside {
+body>nav>div>aside {
     position: absolute;
     top: 0;
     left: -200px;
@@ -66,7 +70,7 @@ body > nav > div > aside {
 
     padding: 32px;
 
-    background-color: white;
+    background-color: var(--background-color);
 
     border-right: 1px solid lightgray;
 
@@ -83,11 +87,11 @@ body > nav > div > aside {
     }
 }
 
-body > nav > div > #openMenu:checked ~ aside {
+body>nav>div>#openMenu:checked~aside {
     left: 0px;
 }
 
-body > nav {
+body>nav {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -98,14 +102,14 @@ body > nav {
 
     &>div {
         align-content: center;
-        
+
         &>label>img {
             cursor: pointer;
         }
     }
 }
 
-body > section:first-of-type {
+body>section:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -132,7 +136,7 @@ body > section:first-of-type {
     }
 }
 
-body > section:nth-of-type(2) {
+body>section:nth-of-type(2) {
     text-align: center;
 
     display: flex;
@@ -148,5 +152,11 @@ body > section:nth-of-type(2) {
         flex-direction: row;
         gap: 16px;
         justify-content: center;
+
+        @media (prefers-color-scheme: dark) {
+            &>a>img {
+                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+            }
+        }
     }
 }
