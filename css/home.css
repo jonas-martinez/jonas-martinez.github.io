@@ -7,6 +7,21 @@ p {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
 button {
     border: none;
 
@@ -43,17 +58,29 @@ body {
 body > nav > div > aside {
     position: absolute;
     top: 0;
-    left: -100px;
+    left: -200px;
+
+    box-sizing: border-box;
 
     height: 100%;
 
-    padding: 16px;
+    padding: 32px;
 
     background-color: white;
 
     border-right: 1px solid lightgray;
 
     transition: left 0.3s ease-in-out;
+
+    &>ul {
+        display: grid;
+        row-gap: 16px;
+
+        &>li {
+            list-style-type: none;
+            font-size: 1.5rem;
+        }
+    }
 }
 
 body > nav > div > #openMenu:checked ~ aside {
@@ -65,8 +92,16 @@ body > nav {
     width: 100%;
     justify-content: space-between;
 
-    &>img {
+    &>a>img {
         width: 40px;
+    }
+
+    &>div {
+        align-content: center;
+        
+        &>label>img {
+            cursor: pointer;
+        }
     }
 }
 
