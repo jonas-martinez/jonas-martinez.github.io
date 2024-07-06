@@ -1,0 +1,152 @@
+body * {
+    font-family: Helvetica, sans-serif;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    border: none;
+
+    cursor: pointer;
+}
+
+.button-primary {
+    background-color: #54B9AF;
+    border-radius: 8px;
+    color: white;
+
+    padding: 8px;
+    width: fit-content;
+
+    font-weight: bold;
+}
+
+.text-light {
+    font-weight: 300;
+}
+
+.shadow {
+    filter: drop-shadow(2px 4px 4px #00000066)
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 24px 32px;
+}
+
+body > nav > div > aside {
+    position: absolute;
+    top: 0;
+    left: -200px;
+
+    box-sizing: border-box;
+
+    height: 100%;
+
+    padding: 32px;
+
+    background-color: white;
+
+    border-right: 1px solid lightgray;
+
+    transition: left 0.3s ease-in-out;
+
+    &>ul {
+        display: grid;
+        row-gap: 16px;
+
+        &>li {
+            list-style-type: none;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+body > nav > div > #openMenu:checked ~ aside {
+    left: 0px;
+}
+
+body > nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &>a>img {
+        width: 40px;
+    }
+
+    &>div {
+        align-content: center;
+        
+        &>label>img {
+            cursor: pointer;
+        }
+    }
+}
+
+body > section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    max-width: 800px;
+
+    text-align: center;
+
+    &>div>p {
+        font-size: 16px;
+    }
+
+    &>div>.text-bold {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    &>img {
+        width: 120px;
+        border-radius: 60px;
+
+        margin-top: 16px;
+    }
+}
+
+body > section:nth-of-type(2) {
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>p {
+        font-size: 24px;
+    }
+
+    &>div {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+}
