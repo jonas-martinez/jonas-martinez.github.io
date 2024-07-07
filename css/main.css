@@ -4,7 +4,7 @@
     --background-color: light-dark(#FFFFFF, #191d26);
     --text-color: light-dark(#000000, #f0f1f5);
 
-    --button-background: #54B9AF;
+    --primary-color: #54B9AF;
 }
 
 body {
