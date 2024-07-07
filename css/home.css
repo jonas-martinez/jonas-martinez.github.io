@@ -2,10 +2,6 @@ body * {
     font-family: Helvetica, sans-serif;
 }
 
-body {
-    background-color: var(--background-color);
-}
-
 p {
     margin: 0;
     padding: 0;
@@ -48,7 +44,7 @@ button {
 }
 
 .shadow {
-    filter: drop-shadow(2px 4px 4px #00000066)
+    filter: drop-shadow(2px 4px 4px #00000066);
 }
 
 body {
@@ -100,11 +96,19 @@ body>nav {
         width: 40px;
     }
 
+    @media (prefers-color-scheme: dark) {
+        &>a>img.shadow {
+            filter: invert(99%) sepia(9%) saturate(674%) hue-rotate(178deg) brightness(99%) contrast(94%);
+        }
+    }
+
     &>div {
         align-content: center;
 
         &>label>img {
             cursor: pointer;
+
+            filter: invert(99%) sepia(9%) saturate(674%) hue-rotate(178deg) brightness(99%) contrast(94%);
         }
     }
 }
@@ -155,7 +159,7 @@ body>section:nth-of-type(2) {
 
         @media (prefers-color-scheme: dark) {
             &>a>img {
-                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+                filter: brightness(0) saturate(100%) invert(99%) sepia(9%) saturate(674%) hue-rotate(178deg) brightness(99%) contrast(94%);;
             }
         }
     }

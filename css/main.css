@@ -1,8 +1,13 @@
 :root {
     color-scheme: light dark;
 
-    --background-color: light-dark(#FFFFFF, #10141a);
-    --text-color: light-dark(#000000, #FFFFFF);
+    --background-color: light-dark(#FFFFFF, #191d26);
+    --text-color: light-dark(#000000, #f0f1f5);
 
     --button-background: #54B9AF;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
