@@ -125,10 +125,6 @@ body>section:first-of-type {
 
     text-align: center;
 
-    &>div>p {
-        font-size: 16px;
-    }
-
     &>div>.text-bold {
         font-size: 24px;
         font-weight: bold;
@@ -164,6 +160,41 @@ body>section:nth-of-type(2) {
                 filter: brightness(0) saturate(100%) invert(99%) sepia(9%) saturate(674%) hue-rotate(178deg) brightness(99%) contrast(94%);
                 ;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 1.25rem;
+    }
+    
+    .button-primary {
+        font-size: 1rem;
+    }
+
+    body>nav>a>img {
+        width: 50px;
+    }
+
+    body>nav>div>label>img {
+        width: 25px;
+    }
+
+    body>section:first-of-type {
+        &>img {
+            width: 150px;
+            border-radius: 75px;
+        }
+
+        &>div>.text-bold {
+            font-size: 1.875rem;
+        }
+    }
+
+    body>section:nth-of-type(2) {
+        &>p {
+            font-size: 1.875rem;
         }
     }
 }
