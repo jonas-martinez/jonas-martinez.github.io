@@ -113,6 +113,11 @@ body>nav>div>aside {
                 }
             }
         }
+
+        &>li:last-of-type>svg {
+            width: 24px;
+            height: 24px;
+        }
     }
 }
 
